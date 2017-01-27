@@ -5,7 +5,7 @@ from .concrete_command2 import ConcreteCommand2
 
 
 class ClientCommand:
-    
+
     def run(self):
         invoker = Invoker()
         receiver = Receiver()
