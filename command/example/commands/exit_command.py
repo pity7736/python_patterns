@@ -3,15 +3,12 @@ from .command import Command
 
 class ExitCommand(Command):
 
-    def __init__(self, title):
-        super(ExitCommand, self).__init__(title=title)
-        self.reset()
+    def __init__(self):
+        super(ExitCommand, self).__init__(title='Salir')
+        self._closed = False
 
     def execute(self):
         self._closed = True
-
-    def reset(self):
-        self._closed = False
 
     def is_closed(self):
         return self._closed

@@ -6,7 +6,7 @@ from .product_menu_command import ProductMenuCommand
 class MainMenu(Menu):
 
     def _get_options(self):
-        self.exit_command = ExitCommand('Salir')
+        self.exit_command = ExitCommand()
         commands = (
             ProductMenuCommand('Productos'),
             self.exit_command
