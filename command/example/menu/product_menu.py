@@ -4,9 +4,9 @@ from .menu import Menu
 
 class ProductMenu(Menu):
 
-    def _set_options(self):
+    def _get_options(self):
         commands = (
             AddProductCommand('Insertar'),
             QueryProductCommand('Consultar')
         )
-        self.commands.extend(commands)
+        return commands
