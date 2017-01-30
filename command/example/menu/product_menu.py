@@ -1,6 +1,5 @@
-from .add_product_command import AddProductCommand
+from ..commands import AddProductCommand, QueryProductCommand
 from .menu import Menu
-from .query_product_command import QueryProductCommand
 
 
 class ProductMenu(Menu):

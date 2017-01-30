@@ -1,4 +1,4 @@
-from .command import Command
+from ..commands import Command
 from .product_menu import ProductMenu
 
 

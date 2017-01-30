@@ -1,6 +1,6 @@
+from ..commands import ExitCommand
 from .menu import Menu
 from .product_menu_command import ProductMenuCommand
-from .exit_command import ExitCommand
 
 
 class MainMenu(Menu):
