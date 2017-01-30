@@ -10,10 +10,12 @@ class Product:
         self._products.append(self)
 
     def __str__(self):
-        return '{} {}'.format(self.code, self.name)
+        return 'Producto: {}. Código: {}. Cantidad: {}'.format(
+            self.name,
+            self.code,
+            self.amount
+        )
 
     @classmethod
     def get_products(cls):
-        print()
-        for product in cls._products:
-            print('Producto: {}. Cantidad: {}'.format(product, product.amount))
+        return cls._products
