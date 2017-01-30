@@ -7,13 +7,13 @@ class Menu(metaclass=ABCMeta):
         self.commands = []
         self._set_options()
 
-    @abstractmethod
-    def _get_options(self):
-        pass
-
     def _set_options(self):
         options = self._get_options()
         self.commands.extend(options)
+
+    @abstractmethod
+    def _get_options(self):
+        pass
 
     def run(self):
         self._show()
