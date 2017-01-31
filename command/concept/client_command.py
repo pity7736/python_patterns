@@ -4,7 +4,7 @@ from .concrete_command1 import ConcreteCommand1
 from .concrete_command2 import ConcreteCommand2
 
 
-class ClientCommand:
+class Client:
 
     def run(self):
         invoker = Invoker()

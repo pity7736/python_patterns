@@ -1,22 +1,22 @@
 import sys
 
-from .concept import ClientCommand
+from .concept import Client
 from .example import MainMenu
 
 
-class RunCommand:
+class ClientCommand:
 
-    runners = {
-        'concept': ClientCommand,
+    clients = {
+        'concept': Client,
         'example': MainMenu
     }
 
     def __init__(self, _type):
-        runner = self.runners.get(_type)
-        if runner is None:
+        client_pattern = self.clients.get(_type)
+        if client_pattern is None:
             print('invalid type')
             sys.exit()
-        self.runner = runner()
+        self.clients = client_pattern()
 
     def run(self):
-        self.runner.run()
+        self.clients.run()

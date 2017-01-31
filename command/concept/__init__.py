@@ -1,1 +1,1 @@
-from .client_command import ClientCommand
+from .client_command import Client

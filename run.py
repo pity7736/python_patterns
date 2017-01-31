@@ -1,10 +1,10 @@
 import argparse
 
-from command import RunCommand
+from command import ClientCommand
 
 
 patterns = {
-    'command': RunCommand
+    'command': ClientCommand
 }
 
 
@@ -24,5 +24,5 @@ if __name__ == '__main__':
         default='concept'
     )
     args = parser.parse_args()
-    runner = patterns[args.pattern](args.t)
-    runner.run()
+    client_pattern = patterns[args.pattern](args.t)
+    client_pattern.run()
