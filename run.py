@@ -1,10 +1,12 @@
 import argparse
 
 from command import ClientCommand
+from singleton import ClientSingleton
 
 
 patterns = {
-    'command': ClientCommand
+    'command': ClientCommand,
+    'singleton': ClientSingleton
 }
 
 
@@ -13,7 +15,7 @@ if __name__ == '__main__':
     parser.add_argument(
         'pattern',
         metavar='pattern',
-        choices=('command',),
+        choices=patterns.keys(),
         help='Pattern to run. choices: %(choices)s'
     )
     parser.add_argument(
