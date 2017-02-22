@@ -10,10 +10,11 @@ class AddProductToCustomer(Command):
         print()
         self._show_products()
         customer_id = int(input('id cliente: '))
-        customer = Customer._customers[customer_id]
+        customer = Customer.get_customer_from_index(customer_index=customer_id)
         products_ids = input('ids productos a insertar (separados por coma): ')
         for product_id in products_ids.split(','):
-            product = Product._products[int(product_id)]
+            product = Product.get_product_from_index(
+                product_index=int(product_id))
             customer.add_product(product=product)
 
         print('productos agregados correctamente.')

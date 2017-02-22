@@ -7,7 +7,7 @@ class QueryAllCustomerProductsCommand(Command):
     def execute(self):
         self._show_customers()
         customer_id = int(input('id cliente: '))
-        customer = Customer._customers[customer_id]
+        customer = Customer.get_customer_from_index(customer_index=customer_id)
         for product in customer.get_products():
             print(product)
 

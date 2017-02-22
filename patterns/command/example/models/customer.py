@@ -13,6 +13,10 @@ class Customer:
     def get_customers(cls):
         return cls._customers
 
+    @classmethod
+    def get_customer_from_index(cls, customer_index):
+        return cls._customers[customer_index]
+
     def full_name(self):
         return '{} {}'.format(self._first_name, self._last_name)
 

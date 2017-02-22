@@ -19,3 +19,7 @@ class Product:
     @classmethod
     def get_products(cls):
         return cls._products
+
+    @classmethod
+    def get_product_from_index(cls, product_index):
+        return cls._products[product_index]
