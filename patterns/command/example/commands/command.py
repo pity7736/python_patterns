@@ -1,7 +1,7 @@
-import abc
+from abc import ABCMeta, abstractmethod
 
 
-class Command(metaclass=abc.ABCMeta):
+class Command(metaclass=ABCMeta):
 
     def __init__(self, title):
         self._title = title
@@ -9,6 +9,6 @@ class Command(metaclass=abc.ABCMeta):
     def get_title(self):
         return self._title
 
-    @abc.abstractmethod
+    @abstractmethod
     def execute(self):
         pass

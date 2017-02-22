@@ -7,6 +7,6 @@ class ProductMenu(Menu):
     def _get_options(self):
         commands = (
             AddProductCommand('Insertar'),
-            QueryProductCommand('Consultar')
+            QueryProductCommand('Consultar'),
         )
         return commands

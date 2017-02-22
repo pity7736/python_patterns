@@ -1,5 +1,6 @@
 from ..commands import ExitCommand
 from .menu import Menu
+from .customer_menu_command import CustomerMenuCommand
 from .product_menu_command import ProductMenuCommand
 
 
@@ -9,6 +10,7 @@ class MainMenu(Menu):
         self.exit_command = ExitCommand()
         commands = (
             ProductMenuCommand('Productos'),
+            CustomerMenuCommand('Clientes'),
             self.exit_command
         )
         return commands
