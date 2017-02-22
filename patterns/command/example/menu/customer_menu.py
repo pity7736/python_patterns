@@ -5,6 +5,8 @@ from .menu import Menu
 
 class CustomerMenu(Menu):
 
+    name = 'Menú clientes'
+
     def _get_options(self):
         commands = (
             AddCustomerCommand('Insertar'),

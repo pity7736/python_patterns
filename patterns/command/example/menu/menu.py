@@ -1,7 +1,11 @@
+from os import system
+
 from abc import ABCMeta, abstractmethod
 
 
 class Menu(metaclass=ABCMeta):
+
+    name = ''
 
     def __init__(self):
         self.commands = []
@@ -21,7 +25,8 @@ class Menu(metaclass=ABCMeta):
         self.commands[option].execute()
 
     def _show(self):
-        print()
+        system('clear')
+        print(self.name)
         print('-' * 50)
         for i, command in enumerate(self.commands):
             print('{}) {}'.format(i, command.get_title()))
