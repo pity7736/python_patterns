@@ -1,9 +1,6 @@
 import argparse
 
-from command import ClientCommand
-from singleton import ClientSingleton
-from template_method import ClientTemplateMethod
-
+from patterns import ClientCommand, ClientSingleton, ClientTemplateMethod
 
 patterns = {
     'command': ClientCommand,

@@ -1,7 +1,7 @@
-from command.concept.invoker import Invoker
-from .receiver import Receiver
 from .concrete_command1 import ConcreteCommand1
 from .concrete_command2 import ConcreteCommand2
+from .invoker import Invoker
+from .receiver import Receiver
 
 
 class Client:
