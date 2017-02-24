@@ -2,7 +2,7 @@ from .command import Command
 from ..models import Customer, Product
 
 
-class AddProductToCustomer(Command):
+class AddProductToCustomerCommand(Command):
 
     def execute(self):
         print()
