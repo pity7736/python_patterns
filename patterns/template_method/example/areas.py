@@ -25,12 +25,10 @@ class Areas:
             except ValueError:
                 print('Ingrese un número')
             else:
-                try:
+                if 0 < index < len(self.figures):
                     figure = self.figures[index]
-                except IndexError:
-                    print('opción inválida')
-                else:
                     return figure()
+                print('opción inválida')
 
     def _show_figures(self):
         print('Figuras disponibles')
