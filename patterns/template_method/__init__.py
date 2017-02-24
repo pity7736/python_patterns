@@ -1,5 +1,5 @@
 from ..base_client import BaseClient
-from .client import Client
+from .concept import Client
 
 
 class ClientTemplateMethod(BaseClient):
