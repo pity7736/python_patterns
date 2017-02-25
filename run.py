@@ -1,15 +1,20 @@
 import argparse
+import sys
 
-from patterns import ClientCommand, ClientSingleton, ClientTemplateMethod
 
-patterns = {
-    'command': ClientCommand,
-    'singleton': ClientSingleton,
-    'template_method': ClientTemplateMethod
-}
+if sys.version_info.major < 3:
+    sys.stderr.write('Python version error.\nMinimun Python version 3.0.\n')
+    sys.exit()
 
 
 if __name__ == '__main__':
+    from patterns import ClientCommand, ClientSingleton, ClientTemplateMethod
+
+    patterns = {
+        'command': ClientCommand,
+        'singleton': ClientSingleton,
+        'template_method': ClientTemplateMethod
+    }
     parser = argparse.ArgumentParser(description='Design patterns examples')
     parser.add_argument(
         'pattern',
