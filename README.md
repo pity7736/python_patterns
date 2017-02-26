@@ -11,8 +11,8 @@ The intention of this repository is to learn (and give you) some concepts and ex
     cd directory_name
     python3 run.py pattern_name
     
-### How get help?
+## How get help?
     python3 run.py -h
     
 ## License
-    Show [license](https://github.com/pity7736/python_patterns/blob/master/LICENSE)
+Show [license](https://github.com/pity7736/python_patterns/blob/master/LICENSE)
