@@ -7,10 +7,12 @@ The intention of this repository is to learn (and give you) some concepts and ex
 + Python 3.x
 
 ## How to run?
+```bash
     git clone https://github.com/pity7736/python_patterns.git directory_name
     cd directory_name
     python3 run.py pattern_name
-    
+```
+    
 ## How get help?
     python3 run.py -h
     
