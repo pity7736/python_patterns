@@ -14,7 +14,9 @@ The intention of this repository is to learn (and give you) some concepts and ex
 ```
     
 ## How get help?
+```bash
     python3 run.py -h
-    
+```
+
 ## License
 Show [license](https://github.com/pity7736/python_patterns/blob/master/LICENSE)
