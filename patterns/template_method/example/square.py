@@ -6,5 +6,5 @@ class Square(Figure):
     name = 'Cuadrado'
 
     def _get_area(self):
-        lado = float(input('Ingrese longitud del lado: '))
-        return lado ** 2
+        side = float(input('Ingrese longitud del lado: '))
+        return side ** 2
