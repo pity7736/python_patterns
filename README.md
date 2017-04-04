@@ -12,6 +12,9 @@ The intention of this repository is to learn (and give you) some concepts and ex
     cd directory_name
     python3 run.py pattern_name
 ```
+### Examples:
++ python3 run.py template_method
++ python3 run.py template_method -t example
     
 ## How get help?
 ```bash
